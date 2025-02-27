@@ -152,3 +152,27 @@ footer p {
   --divider-color: #efefef;
   --font-default-color: #333;
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열 정렬 */
+  gap: 5px; /* 각 사진 사이 간격 */
+  max-width: 600px; /* 전체 갤러리 크기 제한 */
+  margin: 0 auto;
+}
+
+.gallery-item {
+  width: 100%; 
+  aspect-ratio: 1 / 1; /* 정사각형 크기 유지 */
+  background-color: #ddd; /* 기본 배경색 (이미지가 로드되지 않을 때 대비) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율 깨지지 않도록 조절 */
+}
