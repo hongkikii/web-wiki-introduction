@@ -176,3 +176,94 @@ footer p {
   height: 100%;
   object-fit: cover; /* 이미지 비율 깨지지 않도록 조절 */
 }
+
+.comment-writing-container form {
+  padding: 0;
+}
+
+.comment-input-box {
+  width: 97.8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 입력창과 버튼을 같은 행에 배치 */
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  position: relative; /* 버튼을 절대 위치로 배치하기 위한 설정 */
+}
+
+.comment-input-box input {
+  width: 80%; /* 입력창 크기 조정 */
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  outline: none;
+}
+
+.comment-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 10px; /* 버튼들을 입력박스 오른쪽에 위치시키기 위한 설정 */
+  bottom: 10px;
+}
+
+.comment-buttons button {
+  width: 80px; /* 버튼 크기 설정 */
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.cancel-button {
+  background-color: #ebebeb;
+  border: 1px solid #ebebeb;
+  color: #333;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #84f1ff; 
+  border: 1px solid #84f1ff;
+  color: white;
+  cursor: pointer;
+}
+
+
+.cancel-button:hover, .submit-button:hover {
+  opacity: 0.8;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment-author img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.comment-content {
+  font-size: 14px;
+  color: #333;
+}

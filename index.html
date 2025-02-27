@@ -93,16 +93,22 @@
           </article>
         </section>
 
-        <section id="comment">
+        <section id = "comment">
+          <br>
           <div class="comment-writing-container">
             <form id="comment-form">
               <fieldset>
-                <input type="text" id="comment-input" placeholder="댓글을 입력하세요." required />
-                <button type="button" onclick="addComment()">등록</button>
-                <button type="reset">취소</button>
+                <div class="comment-input-box">
+                  <input type="text" id="comment-input" placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다." required />
+                  <div class="comment-buttons">
+                    <button type="reset" class="cancel-button">취소</button>
+                    <button type="button" class="submit-button" onclick="addComment()">등록</button> 
+                  </div>
+                </div>
               </fieldset>
             </form>
           </div>
+
           <ul class="comment-list" id="comment-list">
             <li>
               <div class="comment-item">
@@ -111,14 +117,14 @@
                   <span>방문자</span>
                 </div>
                 <div class="comment-content">
-                  퍼가요~♡
+                  퍼가요 ~ ♡
                 </div>
               </div>
             </li>
             <!-- 댓글 추가 부분 -->
           </ul>
         </section>
-
+        
         <footer>
           <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고" />
           <p>&copy; 우아한테크코스 All Rights reserved.</p>
@@ -139,7 +145,7 @@
               <a href="#masterpiece">나를 울린 인생 작품</a>
             </li>
             <li>
-              <a href="#comment">감상평</a>
+              <a href="#">감상평</a>
             </li>
           </ol>
         </nav>
